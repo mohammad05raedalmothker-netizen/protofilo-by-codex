@@ -1,0 +1,27 @@
+{
+  "name": "mohammad-raed-portfolio",
+  "version": "2.1.0",
+  "private": true,
+  "description": "Accessible AI portfolio with a progressive Three.js experience and local interactive demonstrations.",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "lint": "eslint app.js theme.js portfolio-core.js experience.js system-scene.mjs scripts/*.cjs tests/*.cjs",
+    "test": "node --test tests/core.test.cjs",
+    "test:browser": "node --test tests/browser.test.cjs",
+    "build": "node scripts/build.cjs",
+    "preview": "node scripts/serve.cjs",
+    "check": "pnpm run lint && pnpm test && pnpm run build"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "4.14.0",
+    "esbuild": "^0.28.2",
+    "eslint": "10.14.0",
+    "playwright": "1.62.1"
+  },
+  "dependencies": {
+    "three": "^0.187.0"
+  },
+  "packageManager": "pnpm@11.25.0"
+}

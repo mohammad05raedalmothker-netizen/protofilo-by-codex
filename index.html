@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Mohammad Raed — AI Agents &amp; Automation</title>
+<meta name="description" content="Mohammad Raed builds practical AI agents, automation workflows, RAG systems, and intelligent integrations. Explore projects, tools, and ideas from Jordan.">
+<meta property="og:title" content="Mohammad Raed Al-Mothaker | AI Automation & Agentic AI Developer">
+<meta property="og:description" content="I build AI systems that actually do the work. Explore my agents, automation workflows, and AI projects.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='9' fill='%23e77c42'/><text x='16' y='22' text-anchor='middle' fill='white' font-family='system-ui' font-weight='700' font-size='15'>M</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Figtree:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<script src="theme.js"></script>
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="experience.css">
+<script src="experience.js" defer></script>
+<script src="portfolio-core.js" defer></script>
+<script src="app.js" defer></script>
+</head>
+<body>
+<canvas id="system-canvas" aria-hidden="true"></canvas>
+<div class="scroll-progress" aria-hidden="true"><span></span></div>
+<a href="#main" class="skip-link">Skip to content</a>
+
+<header class="site-header">
+  <div class="container bar">
+    <a class="brand" href="#top" aria-label="Mohammad Raed Al-Mothaker, home">
+      <span class="brand-mark" aria-hidden="true">m<span>.</span></span>
+      <span class="brand-text">
+        <strong>Mohammad Raed</strong>
+        <small>INDEPENDENT AI DEVELOPER</small>
+      </span>
+    </a>
+
+    <nav id="site-nav" aria-label="Main navigation">
+      <a href="#work">Work <span>01</span></a>
+      <a href="#services">Services <span>02</span></a>
+      <a href="#toolkit">Toolkit <span>03</span></a>
+      <a href="#about">About <span>04</span></a>
+      <span class="nav-indicator" aria-hidden="true"></span>
+    </nav>
+
+    <div class="bar-actions">
+      <button class="btn btn-outline btn-sm" type="button" id="open-cv-btn" aria-haspopup="dialog" aria-controls="cv-modal">
+        <span>Resume ↗</span>
+      </button>
+      <button class="icon-btn" type="button" id="theme-toggle" aria-label="Toggle color theme" title="Toggle light/dark mode">
+        <svg class="i-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        <svg class="i-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+      </button>
+      <a class="btn btn-primary header-cta" href="#contact">Let’s talk <span aria-hidden="true">↗</span></a>
+      <button class="menu-btn" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="site-nav"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main id="main" tabindex="-1">
+<!-- HERO -->
+<section class="hero" id="top">
+  <div class="container hero-grid">
+    <div class="hero-copy">
+      <p class="hero-eyebrow"><span class="status-dot" aria-hidden="true"></span> MOHAMMAD RAED / AI DEVELOPER</p>
+      <h1>I build AI systems<br>that actually<br><span class="hero-accent">do the work.</span></h1>
+      <p class="lead">From intelligent agents to automated workflows,<br class="desktop-break"> I turn ideas into practical AI-powered solutions.</p>
+      <div class="actions">
+        <a href="#work" class="btn btn-primary">Explore My Work <span aria-hidden="true">↗</span></a>
+        <a href="#contact" class="btn btn-ghost">Let's Connect <span aria-hidden="true">↗</span></a>
+      </div>
+      <p class="hero-specialties">AI Agents <span>·</span> Automation <span>·</span> RAG <span>·</span> Intelligent Integrations</p>
+    </div>
+    <div class="system-hero">
+      <div class="scene-window" data-scene="network" role="img" aria-label="A three-dimensional network of connected AI agents around an orchestration core">
+        <div class="scene-fallback" aria-hidden="true"><div class="fallback-orbit"></div><div class="fallback-orbit"></div><div class="fallback-core"></div><i></i><i></i><i></i><i></i></div>
+      </div>
+      <span class="scene-corner corner-tl" aria-hidden="true">+</span><span class="scene-corner corner-br" aria-hidden="true">+</span>
+      <span class="orb-label orb-label-a" aria-hidden="true"><i></i> CONTEXT</span>
+      <span class="orb-label orb-label-b" aria-hidden="true"><i></i> ORCHESTRATE</span>
+      <span class="orb-label orb-label-c" aria-hidden="true"><i></i> EXECUTE</span>
+      <div class="scene-caption"><span><i class="status-dot"></i> THE AGENT NETWORK</span><button type="button" id="scene-toggle" aria-pressed="false" aria-label="Pause 3D animation">Pause motion <span aria-hidden="true">Ⅱ</span></button></div>
+    </div>
+  </div>
+  <div class="container hero-footer"><a href="#services" class="scroll-cue"><span aria-hidden="true">↓</span> SCROLL TO EXPLORE</a><span>BASED IN JORDAN <span class="footer-cross">+</span> BUILDING FOR EVERYWHERE</span><span class="availability"><i class="status-dot"></i> OPEN TO OPPORTUNITIES</span></div>
+</section>
+<div class="capability-strip" aria-label="Areas of focus"><div class="container"><span>IDEAS INTO SYSTEMS</span><p>AI agents <b>✳</b> Workflow automation <b>✳</b> Connected knowledge <b>✳</b> Useful intelligence</p></div></div>
+
+<section id="services" class="services-section">
+  <div class="container">
+    <header class="sec-head" data-reveal><p class="sec-kicker">02 / WHAT I CAN HELP WITH</p><h2>Less busywork.<br>More possibility.</h2><p>Practical AI, built around what you need to get done.</p></header>
+    <div class="services-grid">
+      <div class="service-system"><div class="scene-window" data-scene="automation" role="img" aria-label="Agent nodes reorganize into a connected automation pipeline"><div class="scene-fallback" aria-hidden="true"><div class="fallback-orbit"></div><div class="fallback-core"></div><i></i><i></i><i></i></div></div><p class="system-caption">INPUT <span>→</span> UNDERSTAND <span>→</span> ACT</p><span class="service-caption">One useful connection at a time.</span></div>
+      <div class="service-list">
+<a class="service-item" href="#contact" data-prefill="AI Agents" data-system-node="0"><span class="service-index">01</span><div><h3>AI Agents</h3><p>Custom AI agents that can use tools, work with information, and handle multi-step tasks.</p><small>TOOL CALLING / ORCHESTRATION</small></div><span class="service-arrow" aria-hidden="true">↗</span></a>
+<a class="service-item" href="#contact" data-prefill="AI Automation" data-system-node="1"><span class="service-index">02</span><div><h3>AI Automation</h3><p>Smarter workflows that connect applications, APIs, and business processes.</p><small>N8N / PYTHON / WEBHOOKS</small></div><span class="service-arrow" aria-hidden="true">↗</span></a>
+<a class="service-item" href="#contact" data-prefill="RAG Systems" data-system-node="2"><span class="service-index">03</span><div><h3>RAG Systems</h3><p>AI-powered knowledge systems that retrieve relevant information from documents and data.</p><small>RETRIEVAL / CONTEXT / SEARCH</small></div><span class="service-arrow" aria-hidden="true">↗</span></a>
+<a class="service-item" href="#contact" data-prefill="AI Integrations" data-system-node="3"><span class="service-index">04</span><div><h3>AI Integrations</h3><p>Connecting language models, tools, and existing systems into useful applications.</p><small>MCP / APIS / CONNECTED TOOLS</small></div><span class="service-arrow" aria-hidden="true">↗</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- WORK / PROJECTS -->
+<section id="work">
+  <div class="container">
+    <header class="sec-head" data-reveal>
+      <div class="sec-head-top">
+        <div>
+          <p class="sec-kicker">01 / SELECTED WORK</p>
+          <h2>Things I've Built</h2>
+          <p>Experiments, automation systems, and AI projects — from early ideas to working applications.</p>
+        </div>
+        <div class="sec-actions">
+          <button type="button" class="btn btn-subtle btn-sm" id="toggle-all-projects">Expand all details</button>
+          <a class="btn btn-outline btn-sm" href="https://github.com/mohammad05raedalmothker-netizen/n8n-project" target="_blank" rel="noopener noreferrer">GitHub Repo ↗</a>
+        </div>
+      </div>
+    </header>
+
+    <div class="project-toolbar">
+      <div class="filters" role="group" aria-label="Filter projects">
+        <button class="chip is-on" data-filter="all" aria-pressed="true">All</button>
+        <button class="chip" data-filter="featured" aria-pressed="false">Selected</button>
+        <button class="chip" data-filter="ai-agents" aria-pressed="false">AI Agents &amp; RAG</button>
+        <button class="chip" data-filter="mcp" aria-pressed="false">MCP &amp; Claude</button>
+        <button class="chip" data-filter="n8n" aria-pressed="false">n8n</button>
+        <button class="chip" data-filter="crm" aria-pressed="false">CRM &amp; Healthcare</button>
+        <button class="chip" data-filter="python" aria-pressed="false">Python</button>
+      </div>
+      <div class="toolbar-right">
+        <input type="search" id="project-search" class="project-search" placeholder="Search stack, e.g. RAG, MCP, Sheets..." aria-label="Search projects by keyword">
+        <p class="project-count" id="project-count" role="status" aria-live="polite">9 projects</p>
+      </div>
+    </div>
+
+    <div class="project-empty" id="project-empty" hidden>
+      <h3>No matching projects</h3>
+      <p>Try another keyword or clear the filters to explore all nine projects.</p>
+      <button class="btn btn-outline btn-sm" id="reset-projects" type="button">Clear search and filters</button>
+    </div>
+
+    <div class="projects" id="projects" data-stagger>
+      <!-- CV PROJECT 1: Hospital Management System (HMS) -->
+      <details class="project is-featured" data-reveal data-category="featured n8n crm">
+        <summary><span class="project-visual visual-0" aria-hidden="true"><span class="visual-meta">SYS. 01 <span>ARCHITECTURE STUDY</span></span><svg viewBox="0 0 400 210" focusable="false"><g class="visual-wire"><path d="M25 157L195 65L375 155M50 173L220 80M100 190L270 98M150 208L320 118M26 157L204 207M65 135L245 189M105 114L287 166M148 88L330 144"/></g><g class="visual-object" style="--tilt:0deg"><path class="diagram-path" d="M87 125L198 151L310 112"/><path class="diagram-path" d="M87 125L198 62L310 112"/><g class="diagram-node"><path d="M58 98l29-16 29 16v34l-29 16-29-16z"/><path d="M58 98l29 17 29-17M87 115v33"/></g><g class="diagram-core"><path d="M156 90l42-24 42 24v48l-42 24-42-24z"/><path d="M156 90l42 24 42-24M198 114v48"/><path d="M177 78l42 24v48M177 150v-48l42-24"/></g><g class="diagram-node"><path d="M281 82l29-16 29 16v34l-29 16-29-16z"/><path d="M281 82l29 17 29-17M310 99v33"/></g><circle class="diagram-packet" cx="132" cy="136" r="3"/><circle class="diagram-packet" cx="263" cy="128" r="3"/></g><g class="diagram-label"><text x="87" y="176">PORTAL</text><text x="198" y="193">ROUTER</text><text x="310" y="161">RECORDS</text></g></svg><span class="visual-open">EXPLORE SYSTEM <span>↗</span></span></span><span class="project-number">PROJECT / 01</span>
+          <span class="p-title-wrap">
+            <span class="p-badge">SELECTED PROJECT</span>
+            <span class="p-title">Hospital Management System</span>
+          </span>
+          <span class="p-tags">n8n · Google Sheets DB · Arabic HTML UI · 2024–Present</span>
+        </summary>
+        <div class="p-body"><p class="project-problem"><strong>The problem</strong> Keeping clinic bookings and patient workflows connected.</p>
+          <p>Built a complete multi-module Hospital Management System featuring native Arabic-language (RTL) frontends for doctor panels, patient lookup, secretary workflows, and appointment scheduling — using n8n webhook backends and Google Sheets for shared records.</p>
+          <ul class="p-highlights">
+            <li><strong>5 Interconnected Modules:</strong> Doctor consultation panel, patient history lookup, secretary reception desk, automated slot booking, and confirmation alerts.</li>
+            <li><strong>Workflow backend:</strong> Webhook validation, routing, and error handling are handled inside n8n.</li>
+          </ul>
+          <p class="flow-line"><span>Arabic RTL UI</span><span>n8n Webhooks</span><span>5 Workflow Modules</span><span>Google Sheets Live DB</span><span>Auto-Confirmations</span></p>
+          <div class="p-links">
+            <a class="p-link" href="https://github.com/mohammad05raedalmothker-netizen/n8n-project" target="_blank" rel="noopener noreferrer">View architecture on GitHub ↗</a>
+            <a class="p-link p-link-secondary" href="#contact" data-prefill="Hospital Management System (HMS) / Clinic Automation">Request live demo →</a>
+          </div>
+        </div>
+      </details>
+
+      <!-- CV PROJECT 2: Custom Claude Skills, MCP Servers & Aria AI -->
+      <details class="project is-featured" data-reveal data-category="featured ai-agents mcp python n8n">
+        <summary><span class="project-visual visual-1" aria-hidden="true"><span class="visual-meta">SYS. 02 <span>ARCHITECTURE STUDY</span></span><svg viewBox="0 0 400 210" focusable="false"><g class="visual-wire"><path d="M25 157L195 65L375 155M50 173L220 80M100 190L270 98M150 208L320 118M26 157L204 207M65 135L245 189M105 114L287 166M148 88L330 144"/></g><g class="visual-object" style="--tilt:12deg"><path class="diagram-path" d="M87 125L198 151L310 112"/><path class="diagram-path" d="M87 125L198 62L310 112"/><g class="diagram-node"><path d="M58 98l29-16 29 16v34l-29 16-29-16z"/><path d="M58 98l29 17 29-17M87 115v33"/></g><g class="diagram-core"><path d="M156 90l42-24 42 24v48l-42 24-42-24z"/><path d="M156 90l42 24 42-24M198 114v48"/><path d="M177 78l42 24v48M177 150v-48l42-24"/></g><g class="diagram-node"><path d="M281 82l29-16 29 16v34l-29 16-29-16z"/><path d="M281 82l29 17 29-17M310 99v33"/></g><circle class="diagram-packet" cx="132" cy="136" r="3"/><circle class="diagram-packet" cx="263" cy="128" r="3"/></g><g class="diagram-label"><text x="87" y="176">CONTEXT</text><text x="198" y="193">ARIA</text><text x="310" y="161">TOOLS</text></g></svg><span class="visual-open">EXPLORE SYSTEM <span>↗</span></span></span><span class="project-number">PROJECT / 02</span>
+          <span class="p-title-wrap">
+            <span class="p-badge">SELECTED PROJECT</span>
+            <span class="p-title">Aria AI &amp; Claude MCP Tools</span>
+          </span>
+          <span class="p-tags">Anthropic API · MCP · Python · n8n · 2024–Present</span>
+        </summary>
+        <div class="p-body"><p class="project-problem"><strong>The problem</strong> Bringing tasks, tools, and personal context into one assistant.</p>
+          <p>Configured custom Model Context Protocol (MCP) servers and reusable Claude skills to extend Claude's capabilities with external tools, enabling dynamic multi-step agentic behavior alongside an AI-powered SaaS personal assistant prototype (<strong>Aria AI</strong>).</p>
+          <ul class="p-highlights">
+            <li><strong>Aria AI SaaS Prototype:</strong> Unified personal assistant automating task management, email triage, calendar scheduling, and local/cloud file workflows.</li>
+            <li><strong>Reusable Claude Skill Library:</strong> Engineered a bilingual project reviewer (Arabic/English), interactive web animator, and automated n8n-to-HTML interface builder.</li>
+          </ul>
+          <p class="flow-line"><span>Claude API</span><span>MCP Server</span><span>Python Tooling</span><span>n8n Orchestrator</span><span>Aria AI UI</span></p>
+          <div class="p-links">
+            <a class="p-link" href="https://github.com/mohammad05raedalmothker-netizen/n8n-project" target="_blank" rel="noopener noreferrer">Explore Claude &amp; n8n tools on GitHub ↗</a>
+            <a class="p-link p-link-secondary" href="#contact" data-prefill="Custom Claude MCP Server & Agentic AI">Discuss custom MCP agent →</a>
+          </div>
+        </div>
+      </details>
+
+      <!-- CV PROJECT 3: Cost-Optimized RAG & Multi-Agent Workflow Portfolio -->
+      <details class="project is-featured" data-reveal data-category="featured ai-agents n8n">
+        <summary><span class="project-visual visual-2" aria-hidden="true"><span class="visual-meta">SYS. 03 <span>ARCHITECTURE STUDY</span></span><svg viewBox="0 0 400 210" focusable="false"><g class="visual-wire"><path d="M25 157L195 65L375 155M50 173L220 80M100 190L270 98M150 208L320 118M26 157L204 207M65 135L245 189M105 114L287 166M148 88L330 144"/></g><g class="visual-object" style="--tilt:24deg"><path class="diagram-path" d="M87 125L198 151L310 112"/><path class="diagram-path" d="M87 125L198 62L310 112"/><g class="diagram-node"><path d="M58 98l29-16 29 16v34l-29 16-29-16z"/><path d="M58 98l29 17 29-17M87 115v33"/></g><g class="diagram-core"><path d="M156 90l42-24 42 24v48l-42 24-42-24z"/><path d="M156 90l42 24 42-24M198 114v48"/><path d="M177 78l42 24v48M177 150v-48l42-24"/></g><g class="diagram-node"><path d="M281 82l29-16 29 16v34l-29 16-29-16z"/><path d="M281 82l29 17 29-17M310 99v33"/></g><circle class="diagram-packet" cx="132" cy="136" r="3"/><circle class="diagram-packet" cx="263" cy="128" r="3"/></g><g class="diagram-label"><text x="87" y="176">DOCUMENTS</text><text x="198" y="193">RETRIEVE</text><text x="310" y="161">ANSWER</text></g></svg><span class="visual-open">EXPLORE SYSTEM <span>↗</span></span></span><span class="project-number">PROJECT / 03</span>
+          <span class="p-title-wrap">
+            <span class="p-badge">SELECTED PROJECT</span>
+            <span class="p-title">RAG Pipelines &amp; Model Routing</span>
+          </span>
+          <span class="p-tags">RAG · OpenAI &amp; Anthropic · n8n · Cost Optimization · 2023–Present</span>
+        </summary>
+        <div class="p-body"><p class="project-problem"><strong>The problem</strong> Finding useful answers in documents while controlling model usage.</p>
+          <p>Built an open-source collection of n8n workflows exploring Retrieval-Augmented Generation (RAG) over custom document sets, multi-agent coordination, and token-efficient API architecture.</p>
+          <ul class="p-highlights">
+            <li><strong>Model usage:</strong> Implemented prompt caching, smart model routing (tiering lightweight vs. reasoning models), and compact system prompts.</li>
+            <li><strong>Grounded retrieval:</strong> Connected LLMs to external vector &amp; document knowledge bases for grounded, citation-backed responses without manual lookup.</li>
+          </ul>
+          <p class="flow-line"><span>Document Ingest</span><span>Vector RAG</span><span>Smart Model Router</span><span>Prompt Cache</span><span>OpenAI / Claude</span></p>
+          <div class="p-links">
+            <a class="p-link" href="https://github.com/mohammad05raedalmothker-netizen/n8n-project" target="_blank" rel="noopener noreferrer">Browse open-source workflows on GitHub ↗</a>
+          </div>
+        </div>
+      </details>
+
+      <!-- PROJECT 4 -->
+      <details class="project" data-reveal data-category="ai-agents n8n">
+        <summary><span class="project-visual visual-0" aria-hidden="true"><span class="visual-meta">SYS. 04 <span>ARCHITECTURE STUDY</span></span><svg viewBox="0 0 400 210" focusable="false"><g class="visual-wire"><path d="M25 157L195 65L375 155M50 173L220 80M100 190L270 98M150 208L320 118M26 157L204 207M65 135L245 189M105 114L287 166M148 88L330 144"/></g><g class="visual-object" style="--tilt:0deg"><path class="diagram-path" d="M87 125L198 151L310 112"/><path class="diagram-path" d="M87 125L198 62L310 112"/><g class="diagram-node"><path d="M58 98l29-16 29 16v34l-29 16-29-16z"/><path d="M58 98l29 17 29-17M87 115v33"/></g><g class="diagram-core"><path d="M156 90l42-24 42 24v48l-42 24-42-24z"/><path d="M156 90l42 24 42-24M198 114v48"/><path d="M177 78l42 24v48M177 150v-48l42-24"/></g><g class="diagram-node"><path d="M281 82l29-16 29 16v34l-29 16-29-16z"/><path d="M281 82l29 17 29-17M310 99v33"/></g><circle class="diagram-packet" cx="132" cy="136" r="3"/><circle class="diagram-packet" cx="263" cy="128" r="3"/></g><g class="diagram-label"><text x="87" y="176">CHAT</text><text x="198" y="193">INVENTORY</text><text x="310" y="161">QUOTE</text></g></svg><span class="visual-open">EXPLORE SYSTEM <span>↗</span></span></span><span class="project-number">PROJECT / 04</span>
+          <span class="p-title-wrap">
+            <span class="p-title">Stateful AI Assistant for a Computer Retailer</span>
+          </span>
+          <span class="p-tags">AI Agent · n8n · Google Sheets · Gmail</span>
+        </summary>
+        <div class="p-body"><p class="project-problem"><strong>The problem</strong> Matching hardware questions to inventory and compatible builds.</p>
+          <p>Answers customer hardware inquiries with persistent conversation memory, queries live inventory in Google Sheets, recommends compatible PC builds within budget, and emails a formatted quote through Gmail.</p>
+          <p class="flow-line"><span>Chat</span><span>n8n</span><span>Gemini / OpenAI</span><span>Sheets Inventory</span><span>Gmail Quote</span></p>
+          <a class="p-link" href="https://github.com/mohammad05raedalmothker-netizen/n8n-project" target="_blank" rel="noopener noreferrer">View workflow on GitHub ↗</a>
+        </div>
+      </details>
+
+      <!-- PROJECT 5 -->
+      <details class="project" data-reveal data-category="ai-agents crm n8n">
+        <summary><span class="project-visual visual-1" aria-hidden="true"><span class="visual-meta">SYS. 05 <span>ARCHITECTURE STUDY</span></span><svg viewBox="0 0 400 210" focusable="false"><g class="visual-wire"><path d="M25 157L195 65L375 155M50 173L220 80M100 190L270 98M150 208L320 118M26 157L204 207M65 135L245 189M105 114L287 166M148 88L330 144"/></g><g class="visual-object" style="--tilt:12deg"><path class="diagram-path" d="M87 125L198 151L310 112"/><path class="diagram-path" d="M87 125L198 62L310 112"/><g class="diagram-node"><path d="M58 98l29-16 29 16v34l-29 16-29-16z"/><path d="M58 98l29 17 29-17M87 115v33"/></g><g class="diagram-core"><path d="M156 90l42-24 42 24v48l-42 24-42-24z"/><path d="M156 90l42 24 42-24M198 114v48"/><path d="M177 78l42 24v48M177 150v-48l42-24"/></g><g class="diagram-node"><path d="M281 82l29-16 29 16v34l-29 16-29-16z"/><path d="M281 82l29 17 29-17M310 99v33"/></g><circle class="diagram-packet" cx="132" cy="136" r="3"/><circle class="diagram-packet" cx="263" cy="128" r="3"/></g><g class="diagram-label"><text x="87" y="176">CHANNELS</text><text x="198" y="193">AGENT</text><text x="310" y="161">STUDENTS</text></g></svg><span class="visual-open">EXPLORE SYSTEM <span>↗</span></span></span><span class="project-number">PROJECT / 05</span>
+          <span class="p-title-wrap">
+            <span class="p-title">Omnichannel AI Student &amp; Course Assistant</span>
+          </span>
+          <span class="p-tags">AI Agent · CRM · Telegram · HubSpot</span>
+        </summary>
+        <div class="p-body"><p class="project-problem"><strong>The problem</strong> Keeping student support consistent across chat channels.</p>
+          <p>Unified n8n backend powering Telegram DMs, Telegram groups, and an embedded web chat widget. Answers syllabus questions, checks student payment status, updates records, and alerts instructors in real time.</p>
+          <p class="flow-line"><span>Telegram</span><span>Web Chat</span><span>n8n</span><span>Database</span><span>HubSpot</span></p>
+          <a class="p-link" href="https://github.com/mohammad05raedalmothker-netizen/n8n-project" target="_blank" rel="noopener noreferrer">Explore the repository ↗</a>
+        </div>
+      </details>
+
+      <!-- PROJECT 6 -->
+      <details class="project" data-reveal data-category="ai-agents n8n crm">
+        <summary><span class="project-visual visual-2" aria-hidden="true"><span class="visual-meta">SYS. 06 <span>ARCHITECTURE STUDY</span></span><svg viewBox="0 0 400 210" focusable="false"><g class="visual-wire"><path d="M25 157L195 65L375 155M50 173L220 80M100 190L270 98M150 208L320 118M26 157L204 207M65 135L245 189M105 114L287 166M148 88L330 144"/></g><g class="visual-object" style="--tilt:24deg"><path class="diagram-path" d="M87 125L198 151L310 112"/><path class="diagram-path" d="M87 125L198 62L310 112"/><g class="diagram-node"><path d="M58 98l29-16 29 16v34l-29 16-29-16z"/><path d="M58 98l29 17 29-17M87 115v33"/></g><g class="diagram-core"><path d="M156 90l42-24 42 24v48l-42 24-42-24z"/><path d="M156 90l42 24 42-24M198 114v48"/><path d="M177 78l42 24v48M177 150v-48l42-24"/></g><g class="diagram-node"><path d="M281 82l29-16 29 16v34l-29 16-29-16z"/><path d="M281 82l29 17 29-17M310 99v33"/></g><circle class="diagram-packet" cx="132" cy="136" r="3"/><circle class="diagram-packet" cx="263" cy="128" r="3"/></g><g class="diagram-label"><text x="87" y="176">VOICE</text><text x="198" y="193">AGENT</text><text x="310" y="161">CRM</text></g></svg><span class="visual-open">EXPLORE SYSTEM <span>↗</span></span></span><span class="project-number">PROJECT / 06</span>
+          <span class="p-title-wrap">
+            <span class="p-title">Voice-Activated CRM &amp; Calendar Agent</span>
+          </span>
+          <span class="p-tags">Whisper · AI Agent · n8n · HubSpot</span>
+        </summary>
+        <div class="p-body"><p class="project-problem"><strong>The problem</strong> Turning spoken requests into structured CRM actions.</p>
+          <p>Send a quick voice note on the go: Whisper transcribes the audio, an AI agent enriches the company profile via web research, books a calendar slot, and logs a structured deal summary in HubSpot.</p>
+          <p class="flow-line"><span>Voice Note</span><span>Whisper STT</span><span>n8n Agent</span><span>Calendar</span><span>HubSpot CRM</span></p>
+          <a class="p-link" href="https://github.com/mohammad05raedalmothker-netizen/n8n-project" target="_blank" rel="noopener noreferrer">View on GitHub ↗</a>
+        </div>
+      </details>
+
+      <!-- PROJECT 7 -->
+      <details class="project" data-reveal data-category="n8n">
+        <summary><span class="project-visual visual-0" aria-hidden="true"><span class="visual-meta">SYS. 07 <span>ARCHITECTURE STUDY</span></span><svg viewBox="0 0 400 210" focusable="false"><g class="visual-wire"><path d="M25 157L195 65L375 155M50 173L220 80M100 190L270 98M150 208L320 118M26 157L204 207M65 135L245 189M105 114L287 166M148 88L330 144"/></g><g class="visual-object" style="--tilt:0deg"><path class="diagram-path" d="M87 125L198 151L310 112"/><path class="diagram-path" d="M87 125L198 62L310 112"/><g class="diagram-node"><path d="M58 98l29-16 29 16v34l-29 16-29-16z"/><path d="M58 98l29 17 29-17M87 115v33"/></g><g class="diagram-core"><path d="M156 90l42-24 42 24v48l-42 24-42-24z"/><path d="M156 90l42 24 42-24M198 114v48"/><path d="M177 78l42 24v48M177 150v-48l42-24"/></g><g class="diagram-node"><path d="M281 82l29-16 29 16v34l-29 16-29-16z"/><path d="M281 82l29 17 29-17M310 99v33"/></g><circle class="diagram-packet" cx="132" cy="136" r="3"/><circle class="diagram-packet" cx="263" cy="128" r="3"/></g><g class="diagram-label"><text x="87" y="176">NFC</text><text x="198" y="193">VALIDATE</text><text x="310" y="161">LOG</text></g></svg><span class="visual-open">EXPLORE SYSTEM <span>↗</span></span></span><span class="project-number">PROJECT / 07</span>
+          <span class="p-title-wrap">
+            <span class="p-title">NFC Smart Student Attendance &amp; Live Dashboard</span>
+          </span>
+          <span class="p-tags">n8n · IoT Webhooks · Google Sheets</span>
+        </summary>
+        <div class="p-body"><p class="project-problem"><strong>The problem</strong> Connecting physical attendance to a useful digital record.</p>
+          <p>Students tap an NFC badge, firing a signed webhook into n8n that validates identity, logs attendance timestamps in Google Sheets, and updates participation points on a live web dashboard.</p>
+          <p class="flow-line"><span>NFC Tap</span><span>Webhook</span><span>n8n Validation</span><span>Sheets DB</span><span>Live Dashboard</span></p>
+          <a class="p-link" href="https://github.com/mohammad05raedalmothker-netizen/n8n-project" target="_blank" rel="noopener noreferrer">GitHub repository ↗</a>
+        </div>
+      </details>
+
+      <!-- PROJECT 8 -->
+      <details class="project" data-reveal data-category="crm n8n">
+        <summary><span class="project-visual visual-1" aria-hidden="true"><span class="visual-meta">SYS. 08 <span>ARCHITECTURE STUDY</span></span><svg viewBox="0 0 400 210" focusable="false"><g class="visual-wire"><path d="M25 157L195 65L375 155M50 173L220 80M100 190L270 98M150 208L320 118M26 157L204 207M65 135L245 189M105 114L287 166M148 88L330 144"/></g><g class="visual-object" style="--tilt:12deg"><path class="diagram-path" d="M87 125L198 151L310 112"/><path class="diagram-path" d="M87 125L198 62L310 112"/><g class="diagram-node"><path d="M58 98l29-16 29 16v34l-29 16-29-16z"/><path d="M58 98l29 17 29-17M87 115v33"/></g><g class="diagram-core"><path d="M156 90l42-24 42 24v48l-42 24-42-24z"/><path d="M156 90l42 24 42-24M198 114v48"/><path d="M177 78l42 24v48M177 150v-48l42-24"/></g><g class="diagram-node"><path d="M281 82l29-16 29 16v34l-29 16-29-16z"/><path d="M281 82l29 17 29-17M310 99v33"/></g><circle class="diagram-packet" cx="132" cy="136" r="3"/><circle class="diagram-packet" cx="263" cy="128" r="3"/></g><g class="diagram-label"><text x="87" y="176">LEAD</text><text x="198" y="193">ENRICH</text><text x="310" y="161">ROUTE</text></g></svg><span class="visual-open">EXPLORE SYSTEM <span>↗</span></span></span><span class="project-number">PROJECT / 08</span>
+          <span class="p-title-wrap">
+            <span class="p-title">Automated CRM Lead Enricher &amp; Deal Scorer</span>
+          </span>
+          <span class="p-tags">CRM · n8n · Webflow · Slack</span>
+        </summary>
+        <div class="p-body"><p class="project-problem"><strong>The problem</strong> Routing incoming leads without repetitive manual research.</p>
+          <p>Captures incoming Webflow leads, cross-references firmographic database records, computes an AI readiness score, and routes high-priority prospects straight to sales reps in Slack.</p>
+          <p class="flow-line"><span>Webflow</span><span>n8n</span><span>AI Scoring</span><span>CRM Sync</span><span>Slack Alert</span></p>
+          <a class="p-link" href="https://github.com/mohammad05raedalmothker-netizen/n8n-project" target="_blank" rel="noopener noreferrer">GitHub code ↗</a>
+        </div>
+      </details>
+
+      <!-- PROJECT 9 -->
+      <details class="project" data-reveal data-category="python">
+        <summary><span class="project-visual visual-2" aria-hidden="true"><span class="visual-meta">SYS. 09 <span>ARCHITECTURE STUDY</span></span><svg viewBox="0 0 400 210" focusable="false"><g class="visual-wire"><path d="M25 157L195 65L375 155M50 173L220 80M100 190L270 98M150 208L320 118M26 157L204 207M65 135L245 189M105 114L287 166M148 88L330 144"/></g><g class="visual-object" style="--tilt:24deg"><path class="diagram-path" d="M87 125L198 151L310 112"/><path class="diagram-path" d="M87 125L198 62L310 112"/><g class="diagram-node"><path d="M58 98l29-16 29 16v34l-29 16-29-16z"/><path d="M58 98l29 17 29-17M87 115v33"/></g><g class="diagram-core"><path d="M156 90l42-24 42 24v48l-42 24-42-24z"/><path d="M156 90l42 24 42-24M198 114v48"/><path d="M177 78l42 24v48M177 150v-48l42-24"/></g><g class="diagram-node"><path d="M281 82l29-16 29 16v34l-29 16-29-16z"/><path d="M281 82l29 17 29-17M310 99v33"/></g><circle class="diagram-packet" cx="132" cy="136" r="3"/><circle class="diagram-packet" cx="263" cy="128" r="3"/></g><g class="diagram-label"><text x="87" y="176">WEBHOOK</text><text x="198" y="193">PYTHON</text><text x="310" y="161">API</text></g></svg><span class="visual-open">EXPLORE SYSTEM <span>↗</span></span></span><span class="project-number">PROJECT / 09</span>
+          <span class="p-title-wrap">
+            <span class="p-title">Python Data Orchestration &amp; FastAPI Webhook Gateway</span>
+          </span>
+          <span class="p-tags">Python · FastAPI · ETL · Automation</span>
+        </summary>
+        <div class="p-body"><p class="project-problem"><strong>The problem</strong> Making different data formats and APIs work together.</p>
+          <p>Custom Python scripts and FastAPI microservice layer handling heavy file parsing, data normalization, and high-throughput webhook routing between legacy databases and modern LLM pipelines.</p>
+          <p class="flow-line"><span>Webhook</span><span>FastAPI / Python</span><span>Data Processing</span><span>LLM Pipeline</span><span>SaaS API</span></p>
+          <a class="p-link" href="https://github.com/mohammad05raedalmothker-netizen/n8n-project" target="_blank" rel="noopener noreferrer">Explore the repository ↗</a>
+        </div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURED PROJECT: SECOND BRAIN -->
+<section class="brain" id="second-brain">
+  <div class="container brain-wrap">
+    <div class="brain-copy" data-reveal>
+      <p class="brain-kicker"><span></span> ACTIVE R&amp;D ARCHITECTURE <span class="brain-divider">/</span> RAG &amp; MULTI-AGENT MEMORY</p>
+      <h2>AI Second Brain</h2>
+      <p class="brain-lead">A personal knowledge graph &amp; RAG architecture connecting local notes, chemistry research, and project documentation to agentic AI workflows.</p>
+      <p class="brain-description">Scroll through the pipeline: raw documents and Markdown vaults are parsed into semantic chunks, linked across a navigable knowledge graph, and queried via MCP &amp; RAG so AI agents answer with grounded citations.</p>
+      <div class="brain-tags" aria-label="Project concepts">
+        <span>RAG Pipelines</span>
+        <span>MCP Context Layer</span>
+        <span>Vector Search</span>
+        <span>LangGraph &amp; CrewAI</span>
+      </div>
+      <p class="brain-note">Interactive architectural walkthrough — scroll down to trace how raw files become grounded agentic answers.</p>
+    </div>
+    <div class="journey" data-journey>
+      <div class="journey-sticky" >
+        <div class="journey-narrative">
+          <p class="journey-kicker"><span id="journey-index">01</span><span class="journey-kicker-rule"></span><span id="journey-label">SOURCE MATERIAL</span></p>
+          <ol class="journey-steps" aria-label="Second Brain concept stages">
+            <li class="journey-step" aria-current="step" data-label="SOURCE MATERIAL" data-status="Stage 1 of 4: source material. Files and notes provide the raw knowledge." >
+              <span class="journey-step-number">01 / 04</span><h3>Ingest raw documents &amp; notes.</h3><p>Chemistry notes, n8n workflow specs, and Markdown journals form the raw corpus before chunking and indexing.</p>
+            </li>
+            <li class="journey-step" data-label="KNOWLEDGE EXTRACTION" data-status="Stage 2 of 4: knowledge extraction. Information is organized into concepts and useful context.">
+              <span class="journey-step-number">02 / 04</span><h3>Extract structured signal.</h3><p>Python scripts and embedding pipelines organize unstructured text into entities, profile facts, and durable vector memories.</p>
+            </li>
+            <li class="journey-step" data-label="CONNECTED KNOWLEDGE" data-status="Stage 3 of 4: connected knowledge. Related projects, subjects, and ideas form a navigable graph.">
+              <span class="journey-step-number">03 / 04</span><h3>Map relationships across domains.</h3><p>AI agents, RAG pipelines, projects, and analytical frameworks connect into a semantic graph rather than isolated folders.</p>
+            </li>
+            <li class="journey-step" data-label="GROUNDED INTELLIGENCE" data-status="Stage 4 of 4: grounded intelligence. A personal AI agent can use relevant knowledge to prepare an answer with sources.">
+              <span class="journey-step-number">04 / 04</span><h3>Deliver grounded, cited answers.</h3><p>Through MCP tools and RAG retrieval, Claude or OpenAI agents synthesize context-aware answers with verifiable sources.</p>
+            </li>
+          </ol>
+          <div class="journey-progress" role="progressbar" aria-label="Second Brain story progress" aria-valuemin="0" aria-valuemax="4" aria-valuenow="1"><span></span></div>
+          <p class="journey-hint" aria-hidden="true">SCROLL TO EXPLORE <span>↓</span></p>
+        </div>
+        <div class="journey-canvas">
+          <div class="journey-canvas-top"><span>RAG + MCP ARCHITECTURE</span><span>01—04</span></div>
+          <svg class="journey-visual" viewBox="0 0 720 460" role="img" aria-label="Illustration of personal files becoming connected knowledge for an AI agent">
+            <defs>
+              <linearGradient id="brain-line" x1="0" x2="1"><stop stop-color="#77D9C5" stop-opacity=".18"/><stop offset="1" stop-color="#77D9C5" stop-opacity=".9"/></linearGradient>
+              <radialGradient id="brain-node"><stop stop-color="#8BE3CF" stop-opacity=".28"/><stop offset="1" stop-color="#8BE3CF" stop-opacity="0"/></radialGradient>
+            </defs>
+            <g class="scene-files">
+              <g class="doc doc-1"><rect class="doc-shadow" x="42" y="97" width="224" height="66" rx="11"/>
+              <rect class="doc-card" x="34" y="87" width="224" height="66" rx="11"/><rect class="doc-icon" x="49" y="102" width="36" height="36" rx="9"/>
+              <text class="doc-icon-label" x="67" y="125" text-anchor="middle">PDF</text><text class="doc-title" x="98" y="115">Chemistry notes</text><text class="doc-meta" x="98" y="135">lecture-notes.pdf</text>
+              </g><g class="doc doc-2"><rect class="doc-shadow" x="58" y="198" width="224" height="66" rx="11"/>
+              <rect class="doc-card" x="50" y="188" width="224" height="66" rx="11"/><rect class="doc-icon" x="65" y="203" width="36" height="36" rx="9"/>
+              <text class="doc-icon-label" x="83" y="226" text-anchor="middle">MD</text><text class="doc-title" x="114" y="216">Project journal</text><text class="doc-meta" x="114" y="236">second-brain.md</text>
+              </g><g class="doc doc-3"><rect class="doc-shadow" x="32" y="299" width="224" height="66" rx="11"/>
+              <rect class="doc-card" x="24" y="289" width="224" height="66" rx="11"/><rect class="doc-icon" x="39" y="304" width="36" height="36" rx="9"/>
+              <text class="doc-icon-label" x="57" y="327" text-anchor="middle">JSON</text><text class="doc-title" x="88" y="317">n8n workflows</text><text class="doc-meta" x="88" y="337">rag-pipeline.json</text>
+            </g></g>
+            <g class="scene-process">
+              <path class="process-path" pathLength="1" d="M278 122 C335 122 328 192 360 220 M292 220 H350 M268 322 C330 322 326 255 360 230"/>
+              <circle class="process-halo" cx="380" cy="220" r="75"/>
+              <circle class="process-ring" cx="380" cy="220" r="45"/>
+              <circle class="process-orbit" cx="380" cy="220" r="62"/>
+              <circle class="process-core" cx="380" cy="220" r="24"/>
+              <text class="process-glyph" x="380" y="227" text-anchor="middle">✳</text>
+              <text class="process-label" x="380" y="291" text-anchor="middle">MCP + RAG LAYER</text>
+            </g>
+            <g class="scene-network">
+              <path class="graph-edge" pathLength="1" d="M350 224 L260 130"/>
+              <path class="graph-edge" pathLength="1" d="M350 224 L465 120"/>
+              <path class="graph-edge" pathLength="1" d="M350 224 L510 220"/>
+              <path class="graph-edge" pathLength="1" d="M350 224 L457 330"/>
+              <path class="graph-edge" pathLength="1" d="M350 224 L260 324"/>
+              <path class="graph-edge graph-edge-soft" pathLength="1" d="M260 130 L465 120 M465 120 L510 220 M510 220 L457 330 M457 330 L260 324 M260 324 L260 130"/>
+              <circle class="signal" r="3"><animateMotion dur="2.8s" begin="-1s" repeatCount="indefinite" path="M350 224 L260 130"/></circle><circle class="signal" r="3"><animateMotion dur="3.3s" begin="-2s" repeatCount="indefinite" path="M350 224 L465 120"/></circle><circle class="signal" r="3"><animateMotion dur="2.5s" begin="-0.5s" repeatCount="indefinite" path="M350 224 L510 220"/></circle><circle class="signal" r="3"><animateMotion dur="3.1s" begin="-1.5s" repeatCount="indefinite" path="M350 224 L457 330"/></circle><circle class="signal" r="3"><animateMotion dur="3.6s" begin="-2.2s" repeatCount="indefinite" path="M350 224 L260 324"/></circle>
+              <g class="graph-node node-ai"><circle cx="260" cy="130" r="31"/><circle class="node-dot" cx="260" cy="130" r="4"/><text x="260" y="180" text-anchor="middle">AI agents</text></g>
+              <g class="graph-node node-rag"><circle cx="465" cy="120" r="31"/><circle class="node-dot" cx="465" cy="120" r="4"/><text x="465" y="170" text-anchor="middle">RAG</text></g>
+              <g class="graph-node node-project"><circle cx="510" cy="220" r="38"/><circle class="node-dot" cx="510" cy="220" r="5"/><text x="510" y="278" text-anchor="middle">Projects</text></g>
+              <g class="graph-node node-chem"><circle cx="457" cy="330" r="31"/><circle class="node-dot" cx="457" cy="330" r="4"/><text x="457" y="380" text-anchor="middle">Chemistry</text></g>
+              <g class="graph-node node-notes"><circle cx="260" cy="324" r="31"/><circle class="node-dot" cx="260" cy="324" r="4"/><text x="260" y="374" text-anchor="middle">MCP Tools</text></g>
+              <circle class="graph-hub" cx="350" cy="224" r="7"/>
+              <g class="hub-photo"><circle cx="350" cy="224" r="25" fill="none" stroke="#F5A524" stroke-width="1.6"/><clipPath id="hub-clip"><circle cx="350" cy="224" r="21"/></clipPath><image href="avatar.jpg" x="329" y="203" width="42" height="42" preserveAspectRatio="xMidYMin slice" clip-path="url(#hub-clip)"/></g>
+              <text class="graph-center-label" x="350" y="253" text-anchor="middle">KNOWLEDGE GRAPH</text>
+            </g>
+            <g class="scene-answer">
+              <path class="answer-trace" pathLength="1" d="M510 220 C600 220 589 300 526 330"/>
+              <rect class="query-card" x="390" y="294" width="286" height="106" rx="13"/>
+              <circle class="query-dot" cx="411" cy="319" r="4"/><text class="query-label" x="425" y="323">AGENTIC SYNTHESIS</text>
+              <text class="query-copy" x="410" y="350">Grounded answer + citations</text>
+              <path class="source-line" d="M410 369 H475"/><text class="source-label" x="485" y="373">3 verified sources</text>
+            </g>
+          </svg>
+          <p class="journey-sr" id="journey-status" aria-live="polite"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES / CAPABILITIES -->
+
+
+<section id="system-lab"><div class="container lab-grid"><div class="lab-copy" data-reveal><p class="sec-kicker">INSIDE THE WORKFLOW</p><h2>See the connections<br>do their thing.</h2><p>Follow a request from input to action. Switch between three illustrative workflows and inspect each step.</p><a href="#second-brain" class="text-link">Explore the Second Brain concept <span>↗</span></a></div>    <figure class="flow" aria-label="Interactive workflow demonstration">
+      <figcaption class="flow-title" id="flow-title">5-Module Arabic Hospital Management System (Serverless n8n + Sheets)</figcaption>
+      <div class="flow-header">
+        <div class="flow-tabs" role="group" aria-label="Select workflow simulation">
+          <button class="flow-tab is-active" type="button" aria-pressed="true" data-scenario="hms">Hospital HMS</button>
+          <button class="flow-tab" type="button" aria-pressed="false" data-scenario="mcp">Claude MCP + RAG</button>
+          <button class="flow-tab" type="button" aria-pressed="false" data-scenario="retail">Retail AI Agent</button>
+        </div>
+        <button class="flow-play-btn" type="button" id="flow-toggle" aria-pressed="false" aria-label="Pause workflow simulation" title="Pause / Resume simulation">
+          <span id="flow-toggle-label">PLAYING</span>
+        </button>
+      </div>
+
+
+      <ol class="flow-nodes" id="flow">
+        <li class="node is-active" data-step="0"><button class="node-button" type="button">
+          <span class="n-ico">UI</span>
+          <span class="n-text">
+            <b>Arabic Portal Webhook</b>
+            <small>Patient requests appointment slot via RTL HTML frontend</small>
+          </span>
+          <span class="n-badge">POST /hms</span>
+        </button></li>
+        <li class="node" data-step="1"><button class="node-button" type="button">
+          <span class="n-ico">n8n</span>
+          <span class="n-text">
+            <b>5-Module Router &amp; Validation</b>
+            <small>Routes across Doctor, Secretary &amp; Patient workflow modules</small>
+          </span>
+          <span class="n-badge">Validated</span>
+        </button></li>
+        <li class="node" data-step="2"><button class="node-button" type="button">
+          <span class="n-ico">GS</span>
+          <span class="n-text">
+            <b>Real-Time Google Sheets DB</b>
+            <small>Checks doctor availability &amp; locks time slot atomically</small>
+          </span>
+          <span class="n-badge">Row #412</span>
+        </button></li>
+        <li class="node" data-step="3"><button class="node-button" type="button">
+          <span class="n-ico">OK</span>
+          <span class="n-text">
+            <b>Automated Confirmation Sent</b>
+            <small>Updates live clinic dashboard &amp; confirms patient booking</small>
+          </span>
+          <span class="n-badge">200 OK</span>
+        </button></li>
+      </ol>
+
+      <div class="flow-inspector" id="flow-inspector">
+        <span class="inspector-key">TELEMETRY</span>
+        <code id="flow-payload" aria-hidden="true">{"module":"appointment_router","db":"google_sheets_live","server_cost":"$0/mo"}</code><span class="sr-only" id="flow-payload-sr"></span>
+      </div>
+
+      <p class="flow-disclaimer">Illustrative simulation · sample timings and payloads</p>
+      <p class="sr-only" id="flow-status" role="status" aria-live="polite"></p>
+      <div class="flow-foot">
+        <span id="flow-time">0.0s</span>
+        <span id="flow-metric-note">end-to-end execution · zero traditional server required</span>
+      </div>
+    </figure></div></section>
+<!-- INTERACTIVE ROI & API COST CALCULATOR -->
+<section id="roi-estimator">
+  <div class="container">
+    <header class="sec-head" data-reveal>
+      <p class="sec-kicker">INTERACTIVE SAVINGS ESTIMATOR</p>
+      <h2>What could automation free up?</h2>
+      <p>Explore an illustrative scenario with 60% less manual work and 40% lower API spend. These are adjustable-input planning assumptions, not measured project results or a promise of savings.</p>
+    </header>
+
+    <div class="roi-grid" data-reveal>
+      <div class="roi-controls">
+        <div class="control-group">
+          <div class="control-label">
+            <label for="roi-hours">Team repetitive manual work per week</label>
+            <output id="roi-hours-val" for="roi-hours">25 hrs/wk</output>
+          </div>
+          <input type="range" disabled id="roi-hours" min="5" max="120" step="5" value="25">
+          <small>Data entry, lead routing, booking confirmations, document lookups</small>
+        </div>
+
+        <div class="control-group">
+          <div class="control-label">
+            <label for="roi-rate">Average hourly operational cost ($ USD)</label>
+            <output id="roi-rate-val" for="roi-rate">$25 / hr</output>
+          </div>
+          <input type="range" disabled id="roi-rate" min="10" max="100" step="5" value="25">
+          <small>Estimated value of team time spent on manual tasks</small>
+        </div>
+
+        <div class="control-group">
+          <div class="control-label">
+            <label for="roi-api">Current monthly OpenAI / Claude API spend</label>
+            <output id="roi-api-val" for="roi-api">$300 / mo</output>
+          </div>
+          <input type="range" disabled id="roi-api" min="0" max="3000" step="50" value="300">
+          <small>Optimized via prompt caching, token compression &amp; tiered model routing</small>
+        </div>
+      </div>
+
+      <div class="roi-results" aria-live="polite">
+        <div class="roi-kpi-grid">
+          <div class="roi-kpi">
+            <span class="roi-kpi-label">Manual Hours Saved / Month</span>
+            <strong class="roi-kpi-num" id="res-hours">65 hrs</strong>
+            <small>~60% reduction via n8n automation</small>
+          </div>
+          <div class="roi-kpi">
+            <span class="roi-kpi-label">API Spend Saved / Year</span>
+            <strong class="roi-kpi-num" id="res-api">$1,440</strong>
+            <small>~40% saved via smart model routing</small>
+          </div>
+        </div>
+        <div class="roi-total">
+          <span>Estimated Total Annual Value Unlocked</span>
+          <strong id="res-total">$20,940 / yr</strong>
+        </div>
+        <p class="roi-assumptions">Assumes 52 weeks per year, 60% of manual time saved, and 40% lower API spend. Gross potential value before implementation and ongoing costs; actual results vary.</p>
+        <button type="button" class="btn btn-primary" id="roi-book-btn" disabled>Send this estimate for a free audit ↗</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section id="process" class="tint">
+  <div class="container">
+    <header class="sec-head" data-reveal>
+      <p class="sec-kicker">SYSTEMATIC EXECUTION</p>
+      <h2>How a Project Runs</h2>
+      <p>A straightforward process: understand the problem, build carefully, and make the system useful.</p>
+    </header>
+    <ol class="steps" data-stagger>
+      <li data-reveal><span class="s-num">1</span><h3>Audit &amp; Scope</h3><p>We map your current manual loops, API endpoints, and token bottlenecks, then prioritize the highest-ROI automation.</p></li>
+      <li data-reveal><span class="s-num">2</span><h3>Architecture Design</h3><p>I design the n8n node graph, RAG/MCP schema, model routing tiers, and fallback paths before writing code.</p></li>
+      <li data-reveal><span class="s-num">3</span><h3>Build &amp; Stress-Test</h3><p>Workflows, AI agents, HTML webhook portals, and Python scripts are built and tested against real edge cases.</p></li>
+      <li data-reveal><span class="s-num">4</span><h3>Deploy &amp; Handover</h3><p>Goes live with error logging, cost monitoring, and bilingual handover documentation so your team owns the stack.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section id="toolkit"><div class="container"><header class="sec-head" data-reveal><p class="sec-kicker">03 / AN EVER-EVOLVING STACK</p><h2>My Toolkit<span class="orange-period">.</span></h2><p>The tools, frameworks, and models I use to build, experiment, and solve problems.</p></header><div class="toolkit-layout"><div class="toolkit-visual"><div class="scene-window" data-scene="ecosystem" role="img" aria-label="Four connected clusters representing agents, automation, knowledge, and models"><div class="scene-fallback" aria-hidden="true"><div class="fallback-orbit"></div><div class="fallback-core"></div><i></i><i></i><i></i></div></div><p class="system-caption" id="toolkit-caption">CONNECTED BY CURIOSITY</p></div><div class="toolkit-groups"><article class="toolkit-group"><button class="toolkit-select" type="button" data-toolkit="0" aria-pressed="false"><span>01</span><h3>Agentic AI</h3><span aria-hidden="true">↗</span></button><ul><li>AI Agents</li><li>Multi-Agent Systems</li><li>Tool Calling</li><li>Agent Orchestration</li><li>LangChain</li><li>LangGraph</li></ul></article><article class="toolkit-group"><button class="toolkit-select" type="button" data-toolkit="1" aria-pressed="false"><span>02</span><h3>Automation</h3><span aria-hidden="true">↗</span></button><ul><li>n8n</li><li>Python</li><li>REST APIs</li><li>Webhooks</li><li>Workflow Integration</li></ul></article><article class="toolkit-group"><button class="toolkit-select" type="button" data-toolkit="2" aria-pressed="false"><span>03</span><h3>Knowledge & Context</h3><span aria-hidden="true">↗</span></button><ul><li>Retrieval-Augmented Generation (RAG)</li><li>Vector Databases</li><li>Embeddings</li><li>Semantic Search</li><li>Model Context Protocol (MCP)</li></ul></article><article class="toolkit-group"><button class="toolkit-select" type="button" data-toolkit="3" aria-pressed="false"><span>04</span><h3>Models & Platforms</h3><span aria-hidden="true">↗</span></button><ul><li>OpenAI GPT models</li><li>Google Gemini models</li><li>Anthropic Claude models</li><li>OpenRouter</li><li>Local AI models</li><li>Ollama</li><li>MLX</li></ul></article></div></div><p class="toolkit-note">Tools I work with, use in projects, or am actively exploring. Always learning; always building.</p></div></section>
+<!-- ABOUT / CV & CREDENTIALS -->
+<section id="about">
+  <div class="container">
+    <header class="sec-head" data-reveal>
+      <div class="sec-head-top">
+        <div>
+          <p class="sec-kicker">04 / THE PERSON BEHIND THE SYSTEMS</p>
+          <h2>Curious by nature.<br>Builder by choice.</h2>
+        </div>
+        <button type="button" class="btn btn-outline btn-sm" data-open-cv>View Full CV ↗</button>
+      </div>
+    </header>
+
+    <div class="about">
+      <div class="about-main">
+        <div class="about-intro" data-reveal>
+          <img class="avatar" src="avatar.jpg" alt="Portrait of Mohammad Raed Al-Mothaker" width="280" height="350" loading="lazy">
+          <div class="profile-copy">
+            <p class="profile-role">MOHAMMAD RAED AL-MOTHAKER / JORDAN</p>
+            <p>I'm into building AI systems that make technology more useful.</p>
+            <p>I work with AI agents, automation workflows, and language models to explore better ways of solving problems.</p>
+            <p>From connecting tools with n8n to building custom solutions in Python and LangGraph, I enjoy turning complex ideas into practical, working systems.</p>
+            <p>I'm constantly experimenting, learning, and building.</p>
+            <div class="lang-pills" aria-label="Spoken languages">
+              <span><strong>Arabic:</strong> Native</span>
+              <span><strong>English:</strong> Professional Working Proficiency</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- WORK EXPERIENCE & EDUCATION TIMELINE -->
+        <div class="cv-block" data-reveal>
+          <h3 class="cv-block-title">Work Experience &amp; Education</h3>
+          <ul class="career" data-stagger>
+            <li data-reveal>
+              <div class="career-meta">
+                <b>2024 – Present</b>
+                <small>Jordan (Remote)</small>
+              </div>
+              <div class="career-content">
+                <h4>AI Automation Developer · Freelance / Self-Directed Projects</h4>
+                <ul class="career-bullets">
+                  <li>Designed and deployed <strong>10+ n8n automation workflows</strong> integrating OpenAI and Anthropic APIs, exploring practical ways to reduce repetitive manual work.</li>
+                  <li>Built <strong>RAG (Retrieval-Augmented Generation)</strong> pipelines connecting LLMs to external knowledge bases for context-aware responses over custom document sets.</li>
+                  <li>Configured <strong>MCP (Model Context Protocol)</strong> servers to extend Claude's capabilities with external tools, enabling dynamic multi-step agentic behavior.</li>
+                  <li>Explored LLM cost optimization through prompt caching, smart model routing strategies, and token-efficient system prompt design.</li>
+                  <li>Developed self-contained <strong>HTML + n8n webhook interfaces</strong> for clinic management (HMS), CRM, and booking systems integrating Google Sheets as a live backend.</li>
+                  <li>Authored <strong>Python scripts</strong> to automate data processing, file handling, and workflow orchestration supporting AI pipelines.</li>
+                </ul>
+              </div>
+            </li>
+            <li data-reveal>
+              <div class="career-meta">
+                <b>2023 – Present</b>
+                <small>GitHub Open Source</small>
+              </div>
+              <div class="career-content">
+                <h4>AI Automation Workflow Portfolio · Open-Source Maintainer</h4>
+                <ul class="career-bullets">
+                  <li>Published a collection of production-ready n8n workflows demonstrating RAG pipelines, multi-agent coordination, scheduled automations, and real-world API integrations with OpenAI, Anthropic, and Gemini.</li>
+                </ul>
+              </div>
+            </li>
+            <li data-reveal>
+              <div class="career-meta">
+                <b>2023 – 2027 (Exp.)</b>
+                <small>Jordan</small>
+              </div>
+              <div class="career-content">
+                <h4>B.Sc. in Chemistry (4th Year) · Al-Hussein Bin Talal University (AHU)</h4>
+                <p>Applying analytical systems thinking and scientific methodology to independent software engineering, SaaS prototyping, and agentic AI architecture.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- SKILLS & CONTINUOUS LEARNING SIDEBAR -->
+      <aside class="stack-col">
+        <div class="stack" data-reveal>
+          <h3>More of the toolkit</h3>
+          <dl>
+            <div>
+              <dt>Automation &amp; Workflow Tools</dt>
+              <dd class="skill-tags"><span>n8n</span><span>Zapier</span><span>Webhook Integration</span><span>Google Sheets API</span></dd>
+            </div>
+            <div>
+              <dt>AI &amp; LLM Technologies</dt>
+              <dd class="skill-tags"><span>RAG Pipelines</span><span>Multi-Agent Systems</span><span>Prompt Engineering</span><span>Prompt Caching</span><span>CrewAI</span><span>LangGraph</span></dd>
+            </div>
+            <div>
+              <dt>APIs &amp; Protocols</dt>
+              <dd class="skill-tags"><span>MCP (Model Context Protocol)</span><span>REST APIs</span><span>Anthropic Claude API</span><span>OpenAI API</span><span>Gemini API</span></dd>
+            </div>
+            <div>
+              <dt>Programming &amp; Web</dt>
+              <dd class="skill-tags"><span>Python (Intermediate)</span><span>FastAPI</span><span>HTML5 / CSS3 (RTL)</span><span>JavaScript</span></dd>
+            </div>
+            <div>
+              <dt>Data, CRM &amp; DevOps</dt>
+              <dd class="skill-tags"><span>GitHub</span><span>Docker (Learning)</span><span>HubSpot API</span><span>Supabase</span><span>PostgreSQL</span></dd>
+            </div>
+            <div>
+              <dt>Core Strengths</dt>
+              <dd class="skill-tags"><span>Self-Directed Learning</span><span>Problem-Solving Under Pressure</span><span>Remote Collaboration</span></dd>
+            </div>
+          </dl>
+        </div>
+
+        <div class="stack learning-card" data-reveal>
+          <p class="sec-kicker">CONTINUOUS LEARNING LAB</p>
+          <h3>Currently exploring</h3>
+          <p>Actively building and studying multi-agent orchestration patterns:</p>
+          <ul class="learning-list">
+            <li><strong>LangGraph &amp; CrewAI:</strong> Stateful cyclic graphs and multi-agent role delegation.</li>
+            <li><strong>Vector Databases:</strong> High-recall hybrid search for production RAG systems.</li>
+            <li><strong>Docker &amp; Containerization:</strong> Reproducible self-hosted n8n &amp; MCP server deployments.</li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="tint">
+  <div class="contact-orbit scene-window" data-scene="contact" aria-hidden="true"><div class="scene-fallback"><div class="fallback-orbit"></div><div class="fallback-core"></div></div></div>
+  <div class="container contact">
+    <div data-reveal>
+      <p class="sec-kicker">05 / LET’S BUILD SOMETHING USEFUL</p>
+      <h2>Have something<br>in mind?</h2>
+      <p class="lead-sm">Whether it’s an automation idea, an AI project, or just an interesting technical challenge, I’d love to hear about it.</p>
+      <ul class="reach">
+        <li><span>Email</span><a href="mailto:mohammad05raedalmothker@gmail.com">mohammad05raedalmothker@gmail.com</a></li>
+        <li><span>Phone (CV)</span><a href="tel:+962796857379">+962 79 685 7379</a></li>
+        <li><span>WhatsApp</span><a href="https://wa.me/962775296594" target="_blank" rel="noopener noreferrer">+962 77 529 6594 (Direct Chat)</a></li>
+        <li><span>GitHub</span><a href="https://github.com/mohammad05raedalmothker-netizen/n8n-project" target="_blank" rel="noopener noreferrer">github.com/mohammad05raedalmothker-netizen/n8n-project</a></li>
+        <li><span>LinkedIn</span><a href="https://www.linkedin.com/in/mohammad-raed-almothker-07a59b322/" target="_blank" rel="noopener noreferrer">mohammad-raed-almothker</a></li>
+        <li><span>Location</span><strong>Jordan · Remote Worldwide</strong></li>
+      </ul>
+      <div class="contact-cta-row">
+        <a class="btn btn-primary" href="https://wa.me/962775296594?text=Hi%20Mohammad%2C%20I%27d%20like%20to%20book%20a%20free%2030-minute%20audit%20for%20my%20business%20workflows." target="_blank" rel="noopener noreferrer">Let's Talk ↗</a>
+        <button type="button" class="btn btn-outline" data-open-cv>View / Print ATS CV</button>
+      </div>
+    </div>
+
+    <form id="contact-form" data-reveal novalidate>
+      <noscript><p>Use the direct email or WhatsApp links to get in touch. The inquiry composer requires JavaScript.</p></noscript>
+      <h3>Tell me about your idea</h3>
+      <fieldset id="contact-fields" disabled aria-label="Inquiry details">
+      <div class="quick-topics" role="group" aria-label="Quick inquiry topics">
+        <button type="button" class="topic-pill" aria-pressed="false" data-topic="n8n Workflow Automation">n8n Workflow</button>
+        <button type="button" class="topic-pill" aria-pressed="false" data-topic="RAG Pipeline / Custom AI Agent">RAG / AI Agent</button>
+        <button type="button" class="topic-pill" aria-pressed="false" data-topic="Claude MCP Server & Cost Optimization">Claude MCP / Integration</button>
+        <button type="button" class="topic-pill" aria-pressed="false" data-topic="Clinic HMS / Custom CRM System">Clinic HMS / CRM</button>
+        <button type="button" class="topic-pill" aria-pressed="false" data-topic="Freelance or Full-Time Opportunity">Hiring / Full-Time Role</button>
+      </div>
+
+      <label for="form-name">Full name</label>
+      <input id="form-name" name="name" maxlength="100" dir="auto" aria-describedby="contact-form-status" type="text" autocomplete="name" placeholder="Your name or company" required>
+
+      <label for="form-email">Email</label>
+      <input id="form-email" name="email" maxlength="254" dir="ltr" aria-describedby="contact-form-status" type="email" autocomplete="email" placeholder="you@company.com" required>
+
+      <label for="form-subject">Subject <small>(click a tag above or type your own)</small></label>
+      <input id="form-subject" name="subject" maxlength="160" dir="auto" aria-describedby="contact-form-status" type="text" placeholder="e.g. Custom n8n + RAG Workflow">
+
+      <label for="form-message">What would you like to build or automate?</label>
+      <textarea id="form-message" name="message" maxlength="2000" dir="auto" aria-describedby="contact-form-status" rows="5" placeholder="Describe your current workflow, tools, or role opportunity..." required></textarea>
+
+      <p class="form-help">Your message opens in WhatsApp or your email app for review. Nothing is sent until you send it there.</p>
+      <div class="form-actions">
+        <button type="submit" class="btn btn-primary" id="form-submit-button">Send via WhatsApp</button>
+        <button type="button" class="btn btn-outline" id="form-email-button">Send via Email App</button>
+      </div>
+      <a id="contact-handoff" class="p-link" target="_blank" rel="noopener noreferrer" hidden>Open your prepared message ↗</a>
+      <p class="form-status" id="contact-form-status" role="status" aria-live="polite"></p>
+      </fieldset>
+    </form>
+  </div>
+</section>
+<noscript><p class="container no-script-note">The full portfolio is available here. JavaScript adds the interactive scenes, filters, calculator, and CV dialog.</p></noscript>
+</main>
+
+<!-- ATS CV MODAL -->
+<dialog class="cv-modal-backdrop" id="cv-modal" aria-labelledby="cv-modal-title">
+  <div class="cv-modal-card">
+    <header class="cv-modal-header">
+      <div>
+        <p class="sec-kicker">CURRICULUM VITAE</p>
+        <h2 id="cv-modal-title">Mohammad Raed Al-Mothaker</h2>
+        <p class="cv-modal-sub">AI Automation Developer | Automation Developer | Agentic AI Developer</p>
+      </div>
+      <div class="cv-modal-actions">
+        <button type="button" class="btn btn-primary btn-sm" id="print-cv-btn">Print / Save as PDF</button>
+        <button type="button" class="icon-btn" id="close-cv-btn" aria-label="Close CV view">✕</button>
+      </div>
+    </header>
+
+    <div class="cv-modal-body" id="cv-printable">
+      <div class="cv-contact-line">
+        <a href="mailto:mohammad05raedalmothker@gmail.com">mohammad05raedalmothker@gmail.com</a> •
+        <a href="tel:+962796857379">+962-79-685-7379</a> •
+        <a href="https://github.com/mohammad05raedalmothker-netizen/n8n-project" target="_blank" rel="noopener noreferrer">github.com/mohammad05raedalmothker-netizen/n8n-project</a> •
+        <span>Jordan (Remote)</span>
+      </div>
+
+      <section class="cv-sec">
+        <h3>PROFESSIONAL SUMMARY</h3>
+        <p>Self-taught AI Automation Engineer with hands-on experience building and deploying intelligent automation systems using n8n, RAG pipelines, and multi-agent AI architectures. Demonstrated ability to design end-to-end LLM-powered workflows, integrate REST APIs and MCP servers, and reduce API costs through prompt optimization and smart model routing. Currently pursuing a B.Sc. in Chemistry while independently developing production-grade AI systems — reflecting strong self-direction, applied problem-solving, and a bias toward practical results.</p>
+      </section>
+
+      <section class="cv-sec">
+        <h3>WORK EXPERIENCE</h3>
+        <div class="cv-item">
+          <div class="cv-item-head">
+            <strong>AI Automation Developer | Freelance / Self-Directed Projects</strong>
+            <span>Jordan (Remote) | 2024 – Present</span>
+          </div>
+          <ul>
+            <li>Designed and deployed 10+ n8n automation workflows integrating OpenAI and Anthropic APIs, exploring practical ways to reduce repetitive manual work.</li>
+            <li>Built RAG (Retrieval-Augmented Generation) pipelines connecting LLMs to external knowledge bases, enabling context-aware AI responses over custom document sets.</li>
+            <li>Configured MCP (Model Context Protocol) servers to extend Claude's capabilities with external tools, enabling dynamic multi-step agentic behavior.</li>
+            <li>Explored LLM cost optimization through prompt caching, model routing strategies, and token-efficient system prompt design.</li>
+            <li>Developed self-contained HTML/n8n webhook interfaces for clinic management, CRM, and booking systems — integrating Google Sheets as a live backend.</li>
+            <li>Authored Python scripts to automate data processing, file handling, and workflow orchestration tasks supporting AI pipelines.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="cv-sec">
+        <h3>KEY PROJECTS</h3>
+        <div class="cv-item">
+          <div class="cv-item-head">
+            <strong>Hospital Management System (HMS) | Personal Project</strong>
+            <span>n8n + Google Sheets + HTML | 2024 – Present</span>
+          </div>
+          <ul>
+            <li>Built a multi-module HMS with Arabic-language frontends for doctor panels, patient lookup, secretary workflows, and appointment scheduling.</li>
+            <li>Integrated all modules with n8n webhook backends and Google Sheets as a real-time database — fully functional without a traditional server.</li>
+            <li>Implemented automated slot booking, appointment confirmation flows, and error-handling logic across 5 interconnected workflow modules.</li>
+          </ul>
+        </div>
+        <div class="cv-item">
+          <div class="cv-item-head">
+            <strong>AI Automation Workflow Portfolio | GitHub Open Source</strong>
+            <span>n8n + LLM APIs | 2023 – Present</span>
+          </div>
+          <ul>
+            <li>Published a collection of production-ready n8n workflows demonstrating RAG pipelines, AI agent orchestration, and API cost optimization.</li>
+            <li>Workflows cover multi-agent coordination, scheduled automations, and real-world API integrations with OpenAI and Anthropic.</li>
+          </ul>
+        </div>
+        <div class="cv-item">
+          <div class="cv-item-head">
+            <strong>Custom Claude Skills &amp; Automation Tools | Personal / Freelance</strong>
+            <span>Python + n8n + Anthropic API | 2024 – Present</span>
+          </div>
+          <ul>
+            <li>Created reusable Claude skills including a bilingual project reviewer (Arabic/English), web animator, and n8n HTML builder.</li>
+            <li>Built an AI-powered SaaS personal assistant prototype ('Aria AI') featuring task management, email, calendar, and file automation modules.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="cv-sec">
+        <h3>EDUCATION</h3>
+        <div class="cv-item-head">
+          <strong>B.Sc. in Chemistry (4th Year) | Al-Hussein Bin Talal University</strong>
+          <span>Jordan | 2023 – 2027 (Expected)</span>
+        </div>
+      </section>
+
+      <section class="cv-sec">
+        <h3>SKILLS &amp; LANGUAGES</h3>
+        <ul class="cv-skills-list">
+          <li><strong>Automation &amp; Workflow Tools:</strong> n8n, Zapier, Webhook Integration, Google Sheets API</li>
+          <li><strong>AI &amp; LLM Technologies:</strong> RAG Pipelines, Multi-Agent Systems, Prompt Engineering, LangGraph (learning), CrewAI</li>
+          <li><strong>APIs &amp; Protocols:</strong> REST API Integration, MCP (Model Context Protocol), OpenAI API, Anthropic API</li>
+          <li><strong>Programming &amp; DevOps:</strong> Python (Intermediate), HTML/CSS, Docker (learning), GitHub</li>
+          <li><strong>Soft Skills:</strong> Self-directed learning, Problem-solving under pressure, Remote collaboration</li>
+          <li><strong>Languages:</strong> Arabic (Native), English (Professional Working Proficiency)</li>
+        </ul>
+      </section>
+    </div>
+  </div>
+</dialog>
+
+<footer class="site-footer">
+  <div class="container foot">
+    <span>&copy; 2026 Mohammad Raed Al-Mothaker · AI Automation &amp; Agentic AI Developer (Jordan)</span>
+    <nav aria-label="Social">
+      <a href="https://www.linkedin.com/in/mohammad-raed-almothker-07a59b322/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      <a href="https://github.com/mohammad05raedalmothker-netizen/n8n-project" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <a href="mailto:mohammad05raedalmothker@gmail.com">Email</a>
+      <a href="https://wa.me/962775296594" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+      <button type="button" class="footer-link-btn" data-open-cv>ATS CV</button>
+    </nav>
+  </div>
+</footer>
+
+</body>
+</html>
